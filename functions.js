@@ -17,9 +17,9 @@ function getDeliveryFee(total, city) {
     return 0;
   }
 
-  // Lower fee for Kabul, normal fee for other cities (strict equality)
-  // toLowerCase() makes the check work for "Kabul", "kabul", "KABUL"
-  if (city.toLowerCase() === "kabul") {
+  // Lower fee for JAWZJAN, normal fee for other cities (strict equality)
+  // toLowerCase() makes the check work for "JAWZJAN", "jawzjan", "JAWZJAN"
+  if (city.toLowerCase() === "JAWZJAN") {
     return 2;
   }
 
